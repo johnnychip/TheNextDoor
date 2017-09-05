@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6E70DAF5-751B-4BD9-53E5-D9F2753972F8}</ProjectGuid>
+    <ProjectGuid>{7023BD4C-701A-2687-38C8-4005B734F8FB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -271,6 +271,7 @@
      <Compile Include="Assets\Scripts\Inspeccionador.cs" />
      <Compile Include="Assets\Scripts\InspectAim.cs" />
      <Compile Include="Assets\Scripts\MoverObjeto.cs" />
+     <Compile Include="Assets\Scripts\MovimientoSwitche.cs" />
      <Compile Include="Assets\Scripts\PasoDeEscena.cs" />
      <Compile Include="Assets\Scripts\PuertaAbrir.cs" />
      <Compile Include="Assets\Scripts\ShowNotesScript.cs" />
@@ -599,21 +600,21 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="DOTween">
- <HintPath>D:/User/Downloads/TheRedDoor/TheRedDoor/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ <HintPath>D:/User/Documents/UPB/Taller 7/TheRedDoor/TheNextDoor/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="DOTween43">
- <HintPath>D:/User/Downloads/TheRedDoor/TheRedDoor/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+ <HintPath>D:/User/Documents/UPB/Taller 7/TheRedDoor/TheNextDoor/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
  </Reference>
  <Reference Include="DOTween46">
- <HintPath>D:/User/Downloads/TheRedDoor/TheRedDoor/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+ <HintPath>D:/User/Documents/UPB/Taller 7/TheRedDoor/TheNextDoor/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
  </Reference>
  <Reference Include="DOTween50">
- <HintPath>D:/User/Downloads/TheRedDoor/TheRedDoor/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+ <HintPath>D:/User/Documents/UPB/Taller 7/TheRedDoor/TheNextDoor/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{FF52FAB3-B47A-79D9-7A34-5BBC6A9F937E}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{215D97A2-E3B2-0BD2-F73A-6CE884017B68}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

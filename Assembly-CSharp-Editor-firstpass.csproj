@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C52C3580-F6E5-36ED-90A6-E433CA4E3ACF}</ProjectGuid>
+    <ProjectGuid>{C1704DB4-AED3-8F9E-43B1-E89C294BCB5E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
@@ -409,24 +409,24 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="DOTween">
- <HintPath>D:/User/Downloads/TheRedDoor/TheRedDoor/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ <HintPath>D:/User/Documents/UPB/Taller 7/TheRedDoor/TheNextDoor/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="DOTween43">
- <HintPath>D:/User/Downloads/TheRedDoor/TheRedDoor/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+ <HintPath>D:/User/Documents/UPB/Taller 7/TheRedDoor/TheNextDoor/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
  </Reference>
  <Reference Include="DOTween46">
- <HintPath>D:/User/Downloads/TheRedDoor/TheRedDoor/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+ <HintPath>D:/User/Documents/UPB/Taller 7/TheRedDoor/TheNextDoor/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
  </Reference>
  <Reference Include="DOTween50">
- <HintPath>D:/User/Downloads/TheRedDoor/TheRedDoor/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+ <HintPath>D:/User/Documents/UPB/Taller 7/TheRedDoor/TheNextDoor/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
  </Reference>
  <Reference Include="DOTweenEditor">
- <HintPath>D:/User/Downloads/TheRedDoor/TheRedDoor/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ <HintPath>D:/User/Documents/UPB/Taller 7/TheRedDoor/TheNextDoor/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{FF52FAB3-B47A-79D9-7A34-5BBC6A9F937E}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{215D97A2-E3B2-0BD2-F73A-6CE884017B68}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
