@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/ScenaPrueba.unity
-=======
 - path: Assets/Scenes/PlantaV002.unity
->>>>>>> a432b7ea972c8daba0bcf7c431483e964963beda
   isLoaded: 1
   isActive: 1
