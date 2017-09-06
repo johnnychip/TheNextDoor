@@ -11,7 +11,8 @@ public class MovimientoSwitche : MonoBehaviour {
 	{
 		if(other.gameObject.tag == "Player")
 		{
-			
+			Debug.Log("Happening");
+			anim.SetBool("IsWalking", true);
 		}
 	}
 

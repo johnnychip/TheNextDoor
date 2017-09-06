@@ -326,6 +326,7 @@
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_Noise.shader" />
+     <None Include="Assets\Materials\VertexLit.shader" />
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_CellShading2.shader" />
      <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_LED.shader" />
