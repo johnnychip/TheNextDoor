@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheNextDoor", "Assembly-CSh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheNextDoor", "Assembly-CSharp-Editor-firstpass.csproj", "{C1704DB4-AED3-8F9E-43B1-E89C294BCB5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheNextDoor", "Assembly-CSharp-Editor.csproj", "{6DD16E26-D711-E7FC-4144-61000FEFC893}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{C1704DB4-AED3-8F9E-43B1-E89C294BCB5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1704DB4-AED3-8F9E-43B1-E89C294BCB5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1704DB4-AED3-8F9E-43B1-E89C294BCB5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DD16E26-D711-E7FC-4144-61000FEFC893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD16E26-D711-E7FC-4144-61000FEFC893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD16E26-D711-E7FC-4144-61000FEFC893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD16E26-D711-E7FC-4144-61000FEFC893}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

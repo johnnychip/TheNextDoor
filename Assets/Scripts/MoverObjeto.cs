@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 
-public class MoverObjeto : MonoBehaviour {
+public class MoverObjeto : MonoBehaviour, IInspectObjects {
 
 	[SerializeField]
 	private Transform limitA;
@@ -11,12 +11,14 @@ public class MoverObjeto : MonoBehaviour {
 	[SerializeField]
 	private Transform limitB;
 
-	[SerializeField]
-	private Transform playerSlot;
+
+	private float modificator;
 
 	private bool isPlayerActive;
 
 	private GameObject currentPlayer;
+
+	private
 
 	void Start()
 	{
@@ -41,37 +43,49 @@ public class MoverObjeto : MonoBehaviour {
 
 	void Update ()
 	{
-		if(currentPlayer != null)
-		{	
-			if(Input.GetKeyDown(KeyCode.E))
+		if(!isPlayerActive)
+		{
+			if(Input.GetKey(KeyCode.W))
+			{
+				modificator += 0.01f;
+			}
+			if(Input.GetKey(KeyCode.S))
+			{
+				modificator -= 0.01f;
+			}
+			modificator = Mathf.Clamp(modificator,0,1);
+			LerpingDoor();
+		}
+	}
+
+	public void Action(GameObject player)
+	{
+		if(Input.GetKeyDown(KeyCode.E))
 			{	
 				if(isPlayerActive)
 				{
-				currentPlayer.GetComponent<FirstPersonController>().enabled = false;
+				player.GetComponent<RigidbodyFirstPersonController>().enabled = false;
 				isPlayerActive = false;
-				currentPlayer.transform.SetParent(transform);
+				player.transform.SetParent(transform);
 				}
 				else
 				{
-				currentPlayer.GetComponent<FirstPersonController>().enabled = true;
+				player.GetComponent<RigidbodyFirstPersonController>().enabled = true;
 				isPlayerActive = true;
-				currentPlayer.transform.SetParent(null);
+				player.transform.SetParent(null);
 				}
 			}
-			
+	}
 
-			if(Input.GetKeyDown(KeyCode.W))
-			{
-				
-			}
-		}
-
-		
+	public void GoingOut(GameObject player)
+	{
+		isPlayerActive = true;
+		player.transform.SetParent(null);
 	}
 
 	void LerpingDoor()
 	{
-		transform.position = Vector3.Lerp(limitA.position, limitB.position, 1);
+		transform.position = Vector3.Lerp(limitA.position, limitB.position, modificator);
 	}
 	
 }

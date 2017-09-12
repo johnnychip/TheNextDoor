@@ -2,18 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovimientoSwitche : MonoBehaviour {
+public class MovimientoSwitche : MonoBehaviour,IInspectObjects {
 
 	[SerializeField]
 	private Animator anim;
+
+	[SerializeField]
+	private bool isReapeating;
 
 	void OnTriggerEnter(Collider other)
 	{
 		if(other.gameObject.tag == "Player")
 		{
-			Debug.Log("Happening");
-			anim.SetBool("IsWalking", true);
+			Action(other.gameObject);
 		}
+	}
+
+	public void Action(GameObject player)
+	{
+		if(isReapeating)
+		anim.SetTrigger("isTime");
+		else
+		anim.SetBool("IsWalking", true);
+	}
+
+	public void GoingOut(GameObject player)
+	{
+
 	}
 
 }

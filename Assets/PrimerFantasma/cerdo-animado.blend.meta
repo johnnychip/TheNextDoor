@@ -1,0 +1,594 @@
+fileFormatVersion: 2
+guid: 5af276930d3dd0a4f9576151f56ca514
+timeCreated: 1505149995
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: BasicBandit_Body
+    100004: BasicBandit_Clothes
+    100006: BasicBandit_Eye
+    100008: BasicBandit_Mask
+    100010: //RootNode
+    100012: Chest
+    100014: Eye_L
+    100016: Eye_L_end
+    100018: Eye_R
+    100020: Eye_R_end
+    100022: Foot_L
+    100024: Foot_R
+    100026: Hand_L
+    100028: Hand_R
+    100030: Head
+    100032: Hips
+    100034: IndexDistal_L
+    100036: IndexDistal_L_end
+    100038: IndexDistal_R
+    100040: IndexDistal_R_end
+    100042: IndexMiddle_L
+    100044: IndexMiddle_R
+    100046: IndexProximal_L
+    100048: IndexProximal_R
+    100050: Jaw
+    100052: Jaw_end
+    100054: LittleDistal_L
+    100056: LittleDistal_L_end
+    100058: LittleDistal_R
+    100060: LittleDistal_R_end
+    100062: LittleMiddle_L
+    100064: LittleMiddle_R
+    100066: LittleProximal_L
+    100068: LittleProximal_R
+    100070: LowerArm_L
+    100072: LowerArm_R
+    100074: LowerLeg_L
+    100076: LowerLeg_R
+    100078: MiddleDistal_L
+    100080: MiddleDistal_L_end
+    100082: MiddleDistal_R
+    100084: MiddleDistal_R_end
+    100086: MiddleMiddle_L
+    100088: MiddleMiddle_R
+    100090: MiddleProximal_L
+    100092: MiddleProximal_R
+    100094: Neck
+    100096: RingDistal_L
+    100098: RingDistal_L_end
+    100100: RingDistal_R
+    100102: RingDistal_R_end
+    100104: RingMiddle_L
+    100106: RingMiddle_R
+    100108: RingProximal_L
+    100110: RingProximal_R
+    100112: Shoulder_L
+    100114: Shoulder_R
+    100116: Spine
+    100118: ThumbDistal_L
+    100120: ThumbDistal_L_end
+    100122: ThumbDistal_R
+    100124: ThumbDistal_R_end
+    100126: ThumbMiddle_L
+    100128: ThumbMiddle_R
+    100130: ThumbProximal_L
+    100132: ThumbProximal_R
+    100134: Toe_L
+    100136: Toe_L_end
+    100138: Toe_R
+    100140: Toe_R_end
+    100142: UpperArm_L
+    100144: UpperArm_R
+    100146: UpperLeg_L
+    100148: UpperLeg_R
+    400000: Armature
+    400002: BasicBandit_Body
+    400004: BasicBandit_Clothes
+    400006: BasicBandit_Eye
+    400008: BasicBandit_Mask
+    400010: //RootNode
+    400012: Chest
+    400014: Eye_L
+    400016: Eye_L_end
+    400018: Eye_R
+    400020: Eye_R_end
+    400022: Foot_L
+    400024: Foot_R
+    400026: Hand_L
+    400028: Hand_R
+    400030: Head
+    400032: Hips
+    400034: IndexDistal_L
+    400036: IndexDistal_L_end
+    400038: IndexDistal_R
+    400040: IndexDistal_R_end
+    400042: IndexMiddle_L
+    400044: IndexMiddle_R
+    400046: IndexProximal_L
+    400048: IndexProximal_R
+    400050: Jaw
+    400052: Jaw_end
+    400054: LittleDistal_L
+    400056: LittleDistal_L_end
+    400058: LittleDistal_R
+    400060: LittleDistal_R_end
+    400062: LittleMiddle_L
+    400064: LittleMiddle_R
+    400066: LittleProximal_L
+    400068: LittleProximal_R
+    400070: LowerArm_L
+    400072: LowerArm_R
+    400074: LowerLeg_L
+    400076: LowerLeg_R
+    400078: MiddleDistal_L
+    400080: MiddleDistal_L_end
+    400082: MiddleDistal_R
+    400084: MiddleDistal_R_end
+    400086: MiddleMiddle_L
+    400088: MiddleMiddle_R
+    400090: MiddleProximal_L
+    400092: MiddleProximal_R
+    400094: Neck
+    400096: RingDistal_L
+    400098: RingDistal_L_end
+    400100: RingDistal_R
+    400102: RingDistal_R_end
+    400104: RingMiddle_L
+    400106: RingMiddle_R
+    400108: RingProximal_L
+    400110: RingProximal_R
+    400112: Shoulder_L
+    400114: Shoulder_R
+    400116: Spine
+    400118: ThumbDistal_L
+    400120: ThumbDistal_L_end
+    400122: ThumbDistal_R
+    400124: ThumbDistal_R_end
+    400126: ThumbMiddle_L
+    400128: ThumbMiddle_R
+    400130: ThumbProximal_L
+    400132: ThumbProximal_R
+    400134: Toe_L
+    400136: Toe_L_end
+    400138: Toe_R
+    400140: Toe_R_end
+    400142: UpperArm_L
+    400144: UpperArm_R
+    400146: UpperLeg_L
+    400148: UpperLeg_R
+    4300000: BasicBandit_Body
+    4300002: BasicBandit_Mask
+    4300004: BasicBandit_Eye
+    4300006: BasicBandit_Clothes
+    7400000: Default Take
+    7400002: ArmatureAction
+    9500000: //RootNode
+    13700000: BasicBandit_Body
+    13700002: BasicBandit_Clothes
+    13700004: BasicBandit_Eye
+    13700006: BasicBandit_Mask
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 138
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Hips
+        weight: 1
+      - path: Armature/Hips/Spine
+        weight: 1
+      - path: Armature/Hips/Spine/Chest
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Neck/Head/Eye_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Neck/Head/Eye_L/Eye_L_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Neck/Head/Eye_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Neck/Head/Eye_R/Eye_R_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Neck/Head/Jaw
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Neck/Head/Jaw/Jaw_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/IndexProximal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/IndexProximal_L/IndexMiddle_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/IndexProximal_L/IndexMiddle_L/IndexDistal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/IndexProximal_L/IndexMiddle_L/IndexDistal_L/IndexDistal_L_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/LittleProximal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/LittleProximal_L/LittleMiddle_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/LittleProximal_L/LittleMiddle_L/LittleDistal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/LittleProximal_L/LittleMiddle_L/LittleDistal_L/LittleDistal_L_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/MiddleProximal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/MiddleProximal_L/MiddleMiddle_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/MiddleProximal_L/MiddleMiddle_L/MiddleDistal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/MiddleProximal_L/MiddleMiddle_L/MiddleDistal_L/MiddleDistal_L_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/RingProximal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/RingProximal_L/RingMiddle_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/RingProximal_L/RingMiddle_L/RingDistal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/RingProximal_L/RingMiddle_L/RingDistal_L/RingDistal_L_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/ThumbProximal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/ThumbProximal_L/ThumbMiddle_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/ThumbProximal_L/ThumbMiddle_L/ThumbDistal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/ThumbProximal_L/ThumbMiddle_L/ThumbDistal_L/ThumbDistal_L_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/IndexProximal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/IndexProximal_R/IndexMiddle_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/IndexProximal_R/IndexMiddle_R/IndexDistal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/IndexProximal_R/IndexMiddle_R/IndexDistal_R/IndexDistal_R_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/LittleProximal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/LittleProximal_R/LittleMiddle_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/LittleProximal_R/LittleMiddle_R/LittleDistal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/LittleProximal_R/LittleMiddle_R/LittleDistal_R/LittleDistal_R_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/MiddleProximal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/MiddleProximal_R/MiddleMiddle_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/MiddleProximal_R/MiddleMiddle_R/MiddleDistal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/MiddleProximal_R/MiddleMiddle_R/MiddleDistal_R/MiddleDistal_R_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/RingProximal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/RingProximal_R/RingMiddle_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/RingProximal_R/RingMiddle_R/RingDistal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/RingProximal_R/RingMiddle_R/RingDistal_R/RingDistal_R_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/ThumbProximal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/ThumbProximal_R/ThumbMiddle_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/ThumbProximal_R/ThumbMiddle_R/ThumbDistal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/ThumbProximal_R/ThumbMiddle_R/ThumbDistal_R/ThumbDistal_R_end
+        weight: 1
+      - path: Armature/Hips/UpperLeg_L
+        weight: 1
+      - path: Armature/Hips/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/Hips/UpperLeg_L/LowerLeg_L/Foot_L
+        weight: 1
+      - path: Armature/Hips/UpperLeg_L/LowerLeg_L/Foot_L/Toe_L
+        weight: 1
+      - path: Armature/Hips/UpperLeg_L/LowerLeg_L/Foot_L/Toe_L/Toe_L_end
+        weight: 1
+      - path: Armature/Hips/UpperLeg_R
+        weight: 1
+      - path: Armature/Hips/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Armature/Hips/UpperLeg_R/LowerLeg_R/Foot_R
+        weight: 1
+      - path: Armature/Hips/UpperLeg_R/LowerLeg_R/Foot_R/Toe_R
+        weight: 1
+      - path: Armature/Hips/UpperLeg_R/LowerLeg_R/Foot_R/Toe_R/Toe_R_end
+        weight: 1
+      - path: BasicBandit_Body
+        weight: 1
+      - path: BasicBandit_Clothes
+        weight: 1
+      - path: BasicBandit_Eye
+        weight: 1
+      - path: BasicBandit_Mask
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ArmatureAction
+      takeName: ArmatureAction
+      firstFrame: 0
+      lastFrame: 138
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Hips
+        weight: 1
+      - path: Armature/Hips/Spine
+        weight: 1
+      - path: Armature/Hips/Spine/Chest
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Neck/Head/Eye_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Neck/Head/Eye_L/Eye_L_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Neck/Head/Eye_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Neck/Head/Eye_R/Eye_R_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Neck/Head/Jaw
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Neck/Head/Jaw/Jaw_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/IndexProximal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/IndexProximal_L/IndexMiddle_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/IndexProximal_L/IndexMiddle_L/IndexDistal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/IndexProximal_L/IndexMiddle_L/IndexDistal_L/IndexDistal_L_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/LittleProximal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/LittleProximal_L/LittleMiddle_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/LittleProximal_L/LittleMiddle_L/LittleDistal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/LittleProximal_L/LittleMiddle_L/LittleDistal_L/LittleDistal_L_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/MiddleProximal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/MiddleProximal_L/MiddleMiddle_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/MiddleProximal_L/MiddleMiddle_L/MiddleDistal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/MiddleProximal_L/MiddleMiddle_L/MiddleDistal_L/MiddleDistal_L_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/RingProximal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/RingProximal_L/RingMiddle_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/RingProximal_L/RingMiddle_L/RingDistal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/RingProximal_L/RingMiddle_L/RingDistal_L/RingDistal_L_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/ThumbProximal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/ThumbProximal_L/ThumbMiddle_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/ThumbProximal_L/ThumbMiddle_L/ThumbDistal_L
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/ThumbProximal_L/ThumbMiddle_L/ThumbDistal_L/ThumbDistal_L_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/IndexProximal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/IndexProximal_R/IndexMiddle_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/IndexProximal_R/IndexMiddle_R/IndexDistal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/IndexProximal_R/IndexMiddle_R/IndexDistal_R/IndexDistal_R_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/LittleProximal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/LittleProximal_R/LittleMiddle_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/LittleProximal_R/LittleMiddle_R/LittleDistal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/LittleProximal_R/LittleMiddle_R/LittleDistal_R/LittleDistal_R_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/MiddleProximal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/MiddleProximal_R/MiddleMiddle_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/MiddleProximal_R/MiddleMiddle_R/MiddleDistal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/MiddleProximal_R/MiddleMiddle_R/MiddleDistal_R/MiddleDistal_R_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/RingProximal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/RingProximal_R/RingMiddle_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/RingProximal_R/RingMiddle_R/RingDistal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/RingProximal_R/RingMiddle_R/RingDistal_R/RingDistal_R_end
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/ThumbProximal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/ThumbProximal_R/ThumbMiddle_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/ThumbProximal_R/ThumbMiddle_R/ThumbDistal_R
+        weight: 1
+      - path: Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/ThumbProximal_R/ThumbMiddle_R/ThumbDistal_R/ThumbDistal_R_end
+        weight: 1
+      - path: Armature/Hips/UpperLeg_L
+        weight: 1
+      - path: Armature/Hips/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/Hips/UpperLeg_L/LowerLeg_L/Foot_L
+        weight: 1
+      - path: Armature/Hips/UpperLeg_L/LowerLeg_L/Foot_L/Toe_L
+        weight: 1
+      - path: Armature/Hips/UpperLeg_L/LowerLeg_L/Foot_L/Toe_L/Toe_L_end
+        weight: 1
+      - path: Armature/Hips/UpperLeg_R
+        weight: 1
+      - path: Armature/Hips/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Armature/Hips/UpperLeg_R/LowerLeg_R/Foot_R
+        weight: 1
+      - path: Armature/Hips/UpperLeg_R/LowerLeg_R/Foot_R/Toe_R
+        weight: 1
+      - path: Armature/Hips/UpperLeg_R/LowerLeg_R/Foot_R/Toe_R/Toe_R_end
+        weight: 1
+      - path: BasicBandit_Body
+        weight: 1
+      - path: BasicBandit_Clothes
+        weight: 1
+      - path: BasicBandit_Eye
+        weight: 1
+      - path: BasicBandit_Mask
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

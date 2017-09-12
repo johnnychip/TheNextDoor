@@ -4,8 +4,8 @@ using UnityEngine;
 
 public interface IInspectObjects {
 
-	void Action();
+	void Action(GameObject player);
 
-	void GoingOut();
+	void GoingOut(GameObject player);
 
 }

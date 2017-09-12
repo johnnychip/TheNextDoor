@@ -14,19 +14,26 @@ public class ShowNotesScript : MonoBehaviour, IInspectObjects {
 	[SerializeField]
 	private Text textNote; 
 
-	public void Action()
+	[SerializeField]
+	private GameObject[] thigsToActivate;
+
+	public void Action(GameObject player)
 	{
 		if(!objNote.activeSelf)
 		{
 			objNote.SetActive(true);
 			textNote.text = stringNote;
+			if(thigsToActivate!=null){
+				foreach(GameObject temp in thigsToActivate)
+				temp.GetComponent<IInspectObjects>().Action(player);
+			}
 		}else
 		{
 			objNote.SetActive(false);
 		}
 	}
 
-	public void GoingOut()
+	public void GoingOut(GameObject player)
 	{
 		objNote.SetActive(false);
 	}

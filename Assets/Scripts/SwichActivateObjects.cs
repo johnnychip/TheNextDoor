@@ -26,7 +26,7 @@ public class SwichActivateObjects : MonoBehaviour, IInspectObjects {
 		
 	}
 
-	public void Action()
+	public void Action(GameObject player)
 	{	
 		if(isSwitch)
 		{
@@ -55,6 +55,6 @@ public class SwichActivateObjects : MonoBehaviour, IInspectObjects {
 		}
 	}
 	
-	public void GoingOut()
+	public void GoingOut(GameObject player)
 	{}
 }

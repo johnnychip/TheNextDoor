@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 
-public class Inspeccionador : MonoBehaviour {
+public class Inspeccionador : MonoBehaviour, IInspectObjects {
 
 	[SerializeField]
 	private float rotSpeed = 500f;
-
-	private bool isObjectNear;
 
 	private bool isPlayerActive;
 
@@ -20,56 +18,38 @@ public class Inspeccionador : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		myCharacterController = GetComponent<RigidbodyFirstPersonController>();
 		isPlayerActive = true;
 	}
 
-	void OnTriggerEnter (Collider other)
+	void Update ()
 	{
-		if(other.gameObject.tag == "inspect")
-		{
-			isObjectNear = true;
-			currentObject = other.gameObject;
-			Debug.Log("Are you touching me?");
-		}
-	}
-
-	void OnTriggerExit (Collider other)
-	{
-		if(other.gameObject.tag == "inspect")
-		{	
-			isObjectNear = false;
-			currentObject = null;
-		}
-	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-		if(Input.GetKeyDown(KeyCode.E) && isObjectNear)
-		{	
-			if(myCharacterController.isActiveAndEnabled){
-				myCharacterController.enabled = false;
-				isPlayerActive = false;
-				oldRotation = currentObject.transform.rotation;
-
-				Vector3 lookDirection = (currentObject.transform.position - transform.position).normalized;
-
-				transform.rotation = Quaternion.LookRotation(lookDirection);
-			}else
-			{
-				myCharacterController.enabled = true;
-				isPlayerActive = true;
-				currentObject.transform.rotation = oldRotation;
-			}
-
-		
-		}
-
 		if(!isPlayerActive)
 		{
 			OnMouseDrag();
 		}
+	}
+
+	public void Action(GameObject player)
+	{
+		if(player.GetComponent<RigidbodyFirstPersonController>().isActiveAndEnabled){
+			player.GetComponent<RigidbodyFirstPersonController>().enabled = false;
+			isPlayerActive = false;
+			oldRotation = transform.rotation;
+		}else
+		{
+			player.GetComponent<RigidbodyFirstPersonController>().enabled = true;
+			isPlayerActive = true;
+			transform.rotation = oldRotation;
+		}
+
+	
+	}
+
+
+	public void GoingOut(GameObject player)
+	{
+			isPlayerActive = true;
+			transform.rotation = oldRotation;
 	}
 
 	void OnMouseDrag()
@@ -77,8 +57,8 @@ public class Inspeccionador : MonoBehaviour {
 		float rotX = Input.GetAxis("Mouse X")*rotSpeed*Mathf.Deg2Rad;
 		float rotY = Input.GetAxis("Mouse Y")*rotSpeed*Mathf.Deg2Rad;
 	
-		currentObject.transform.Rotate(Vector3.up, -rotX);
-		currentObject.transform.Rotate(Vector3.right, rotY);
+		gameObject.transform.Rotate(Vector3.up, -rotX);
+		gameObject.transform.Rotate(Vector3.right, rotY);
 		
 	}
 

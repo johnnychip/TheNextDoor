@@ -10,10 +10,16 @@ public class InspectAim : MonoBehaviour {
 	[SerializeField]
 	private GameObject player;
 
+	[SerializeField]
+	private GameObject aim;
+
+	[SerializeField]
+	private GameObject handAim;
+
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.E) && currentInspect != null)
 		{
-			currentInspect.GetComponent<IInspectObjects>().Action();
+			currentInspect.GetComponent<IInspectObjects>().Action(player);
 		}
 	}
 
@@ -22,6 +28,8 @@ public class InspectAim : MonoBehaviour {
 		if(other.gameObject.tag == "inspect")
 		{
 			currentInspect = other.gameObject;
+			aim.SetActive(false);
+			handAim.SetActive(true);
 		}
 	}
 
@@ -29,8 +37,11 @@ public class InspectAim : MonoBehaviour {
 	{
 		if(other.gameObject == currentInspect)
 		{	
-			currentInspect.GetComponent<IInspectObjects>().GoingOut();
+			currentInspect.GetComponent<IInspectObjects>().GoingOut(player);
+			player.GetComponent<RigidbodyFirstPersonController>().enabled=true;
 			currentInspect = null;
+			aim.SetActive(true);
+			handAim.SetActive(false);
 		}
 	}
 

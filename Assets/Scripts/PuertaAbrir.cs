@@ -11,14 +11,17 @@ public class PuertaAbrir : MonoBehaviour, IInspectObjects {
 	[SerializeField]
 	private Vector3 openDoorRotation;
 
+	[SerializeField]
+	private float timeToOpen;
+
 	void Start () {
 		DOTween.Init(false, true, LogBehaviour.ErrorsOnly);
 	}
-	public void Action ()
+	public void Action (GameObject player)
 	{
-		theDoor.DORotate(openDoorRotation,1);
+		theDoor.DORotate(openDoorRotation,timeToOpen);
 	}
 
-	public void GoingOut()
+	public void GoingOut(GameObject player)
 	{}
 }

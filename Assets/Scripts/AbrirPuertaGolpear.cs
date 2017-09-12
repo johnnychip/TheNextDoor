@@ -13,13 +13,19 @@ public class AbrirPuertaGolpear : MonoBehaviour, IInspectObjects {
 
 	[SerializeField]
 	private int nocksToOpen;
+	
+	[SerializeField]
+	private float timeToOpen;
+
+	[SerializeField]
+	private GameObject[] thigsToActivate;
 
 	private int nocksCounter;
 
 	void Start () {
 		DOTween.Init(false, true, LogBehaviour.ErrorsOnly);
 	}
-	public void Action ()
+	public void Action (GameObject player)
 	{
 		if(nocksCounter<nocksToOpen)
 		{
@@ -27,11 +33,15 @@ public class AbrirPuertaGolpear : MonoBehaviour, IInspectObjects {
 		}
 		else
 		{
-			theDoor.DORotate(openDoorRotation,1.5f);
+			theDoor.DORotate(openDoorRotation,timeToOpen);
+			if(thigsToActivate!=null){
+				foreach(GameObject temp in thigsToActivate)
+				temp.GetComponent<IInspectObjects>().Action(player);
+			}
 		}
 	}
 
-	public void GoingOut()
+	public void GoingOut(GameObject player)
 	{}
 
 }
