@@ -14,12 +14,16 @@ public class PuertaAbrir : MonoBehaviour, IInspectObjects {
 	[SerializeField]
 	private float timeToOpen;
 
+	[SerializeField]
+	private AudioSource audioPuerta;
+
 	void Start () {
 		DOTween.Init(false, true, LogBehaviour.ErrorsOnly);
 	}
 	public void Action (GameObject player)
 	{
 		theDoor.DORotate(openDoorRotation,timeToOpen);
+		audioPuerta.Play();
 	}
 
 	public void GoingOut(GameObject player)

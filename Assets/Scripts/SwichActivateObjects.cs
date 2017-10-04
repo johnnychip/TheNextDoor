@@ -10,11 +10,17 @@ public class SwichActivateObjects : MonoBehaviour, IInspectObjects {
 	[SerializeField]
 	private bool isSwitch;
 
+	[SerializeField]
+	private AudioSource audioSwitchOn;
+
+	[SerializeField]
+	private AudioSource audioSwitchOff;
+
 	private bool isEnd;
 
 	private int counter;
 
-	private
+	private bool isOn;
 
 	// Use this for initialization
 	void Start () {
@@ -53,8 +59,28 @@ public class SwichActivateObjects : MonoBehaviour, IInspectObjects {
 				temp.SetActive(true);
 			}
 		}
+		DoAudio();
+	}
+
+	void DoAudio()
+	{
+		if(audioSwitchOn!=null)
+		{
+			if(isOn)
+			{
+				audioSwitchOff.Play();
+				isOn = false;
+			}else
+			{
+				audioSwitchOn.Play();
+				isOn = true;
+			}
+		}
 	}
 	
 	public void GoingOut(GameObject player)
-	{}
+	{
+
+	}
+
 }

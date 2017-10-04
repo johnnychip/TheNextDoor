@@ -316,6 +316,7 @@
      <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
      <Compile Include="Assets\Scripts\AbrirPuerta.cs" />
      <Compile Include="Assets\Scripts\AbrirPuertaGolpear.cs" />
+     <Compile Include="Assets\Scripts\AudioShootCollision.cs" />
      <Compile Include="Assets\Scripts\CorrerObjetos.cs" />
      <Compile Include="Assets\Scripts\Girador.cs" />
      <Compile Include="Assets\Scripts\IInspectObjects.cs" />

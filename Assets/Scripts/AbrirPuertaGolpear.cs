@@ -20,6 +20,9 @@ public class AbrirPuertaGolpear : MonoBehaviour, IInspectObjects {
 	[SerializeField]
 	private GameObject[] thigsToActivate;
 
+	[SerializeField]
+	private AudioSource audioPuerta;
+
 	private int nocksCounter;
 
 	void Start () {
@@ -37,6 +40,7 @@ public class AbrirPuertaGolpear : MonoBehaviour, IInspectObjects {
 			if(thigsToActivate!=null){
 				foreach(GameObject temp in thigsToActivate)
 				temp.GetComponent<IInspectObjects>().Action(player);
+				audioPuerta.Play();
 			}
 		}
 	}
