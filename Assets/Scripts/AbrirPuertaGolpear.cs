@@ -28,7 +28,7 @@ public class AbrirPuertaGolpear : MonoBehaviour, IInspectObjects {
 	void Start () {
 		DOTween.Init(false, true, LogBehaviour.ErrorsOnly);
 	}
-	public void Action (GameObject player)
+	public void Action (GameObject player, GameObject aimObject)
 	{
 		if(nocksCounter<nocksToOpen)
 		{
@@ -39,13 +39,13 @@ public class AbrirPuertaGolpear : MonoBehaviour, IInspectObjects {
 			theDoor.DORotate(openDoorRotation,timeToOpen);
 			if(thigsToActivate!=null){
 				foreach(GameObject temp in thigsToActivate)
-				temp.GetComponent<IInspectObjects>().Action(player);
+				temp.GetComponent<IInspectObjects>().Action(player,gameObject);
 				audioPuerta.Play();
 			}
 		}
 	}
 
-	public void GoingOut(GameObject player)
+	public void GoingOut(GameObject player, GameObject aimObject)
 	{}
 
 }

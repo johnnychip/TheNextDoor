@@ -17,7 +17,7 @@ public class ShowNotesScript : MonoBehaviour, IInspectObjects {
 	[SerializeField]
 	private GameObject[] thigsToActivate;
 
-	public void Action(GameObject player)
+	public void Action(GameObject player, GameObject aimObject)
 	{
 		if(!objNote.activeSelf)
 		{
@@ -25,7 +25,7 @@ public class ShowNotesScript : MonoBehaviour, IInspectObjects {
 			textNote.text = stringNote;
 			if(thigsToActivate!=null){
 				foreach(GameObject temp in thigsToActivate)
-				temp.GetComponent<IInspectObjects>().Action(player);
+				temp.GetComponent<IInspectObjects>().Action(player,gameObject);
 			}
 		}else
 		{
@@ -33,7 +33,7 @@ public class ShowNotesScript : MonoBehaviour, IInspectObjects {
 		}
 	}
 
-	public void GoingOut(GameObject player)
+	public void GoingOut(GameObject player, GameObject aimObject)
 	{
 		objNote.SetActive(false);
 	}

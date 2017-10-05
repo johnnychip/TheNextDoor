@@ -19,7 +19,7 @@ public class InspectAim : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.E) && currentInspect != null)
 		{
-			currentInspect.GetComponent<IInspectObjects>().Action(player);
+			currentInspect.GetComponent<IInspectObjects>().Action(player, gameObject);
 		}
 	}
 
@@ -33,11 +33,17 @@ public class InspectAim : MonoBehaviour {
 		}
 	}
 
+	public void ActivateAim ()
+	{
+		aim.SetActive(true);
+		handAim.SetActive(false);
+	}
+
 	void OnTriggerExit (Collider other)
 	{
 		if(other.gameObject == currentInspect)
 		{	
-			currentInspect.GetComponent<IInspectObjects>().GoingOut(player);
+			currentInspect.GetComponent<IInspectObjects>().GoingOut(player, gameObject);
 			player.GetComponent<RigidbodyFirstPersonController>().enabled=true;
 			currentInspect = null;
 			aim.SetActive(true);

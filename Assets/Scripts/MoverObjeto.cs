@@ -58,7 +58,7 @@ public class MoverObjeto : MonoBehaviour, IInspectObjects {
 		}
 	}
 
-	public void Action(GameObject player)
+	public void Action(GameObject player, GameObject aimObject)
 	{
 		if(Input.GetKeyDown(KeyCode.E))
 			{	
@@ -77,7 +77,7 @@ public class MoverObjeto : MonoBehaviour, IInspectObjects {
 			}
 	}
 
-	public void GoingOut(GameObject player)
+	public void GoingOut(GameObject player, GameObject aimObject)
 	{
 		isPlayerActive = true;
 		player.transform.SetParent(null);

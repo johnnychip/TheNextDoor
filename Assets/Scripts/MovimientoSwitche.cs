@@ -14,11 +14,11 @@ public class MovimientoSwitche : MonoBehaviour,IInspectObjects {
 	{
 		if(other.gameObject.tag == "Player")
 		{
-			Action(other.gameObject);
+			Action(other.gameObject,gameObject);
 		}
 	}
 
-	public void Action(GameObject player)
+	public void Action(GameObject player, GameObject aimObject)
 	{
 		if(isReapeating)
 		anim.SetTrigger("isTime");
@@ -26,7 +26,7 @@ public class MovimientoSwitche : MonoBehaviour,IInspectObjects {
 		anim.SetBool("IsWalking", true);
 	}
 
-	public void GoingOut(GameObject player)
+	public void GoingOut(GameObject player, GameObject aimObject)
 	{
 
 	}

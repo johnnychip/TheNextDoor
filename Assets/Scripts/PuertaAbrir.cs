@@ -20,12 +20,12 @@ public class PuertaAbrir : MonoBehaviour, IInspectObjects {
 	void Start () {
 		DOTween.Init(false, true, LogBehaviour.ErrorsOnly);
 	}
-	public void Action (GameObject player)
+	public void Action (GameObject player, GameObject aimObject)
 	{
 		theDoor.DORotate(openDoorRotation,timeToOpen);
 		audioPuerta.Play();
 	}
 
-	public void GoingOut(GameObject player)
+	public void GoingOut(GameObject player, GameObject aimObject)
 	{}
 }

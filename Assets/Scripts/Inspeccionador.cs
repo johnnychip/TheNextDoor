@@ -29,7 +29,7 @@ public class Inspeccionador : MonoBehaviour, IInspectObjects {
 		}
 	}
 
-	public void Action(GameObject player)
+	public void Action(GameObject player, GameObject aimObject)
 	{
 		if(player.GetComponent<RigidbodyFirstPersonController>().isActiveAndEnabled){
 			player.GetComponent<RigidbodyFirstPersonController>().enabled = false;
@@ -46,7 +46,7 @@ public class Inspeccionador : MonoBehaviour, IInspectObjects {
 	}
 
 
-	public void GoingOut(GameObject player)
+	public void GoingOut(GameObject player, GameObject aimObject)
 	{
 			isPlayerActive = true;
 			transform.rotation = oldRotation;
