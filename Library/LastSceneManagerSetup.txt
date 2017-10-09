@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/PlantaV003.unity
+- path: Assets/Scenes/Plant2_House.unity
   isLoaded: 1
   isActive: 1
