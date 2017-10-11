@@ -316,6 +316,7 @@
      <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
      <Compile Include="Assets\Scripts\AbrirPuerta.cs" />
      <Compile Include="Assets\Scripts\AbrirPuertaGolpear.cs" />
+     <Compile Include="Assets\Scripts\ActivatesObjectsWhen.cs" />
      <Compile Include="Assets\Scripts\AudioShootCollision.cs" />
      <Compile Include="Assets\Scripts\Girador.cs" />
      <Compile Include="Assets\Scripts\IInspectObjects.cs" />
@@ -383,7 +384,7 @@
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_TV_BrokenGlass.shader" />
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_SoftLight.shader" />
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_Divide.shader" />
-     <None Include="Assets\SimpleApocalypseInteriors\_Materials\UnlitVertexColour_Alpha.shader" />
+     <None Include="Assets\Models\SimpleApocalypseInteriors\_Materials\UnlitVertexColour_Alpha.shader" />
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Manga2.shader" />
      <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Color_RGB.shader" />
@@ -552,7 +553,7 @@
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Distortion_BigFace.shader" />
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_InverChromiLum.shader" />
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_8bits_gb.shader" />
-     <None Include="Assets\SimpleApocalypse\_Materials\UnlitVertexColour_Alpha.shader" />
+     <None Include="Assets\Models\SimpleApocalypse\_Materials\UnlitVertexColour_Alpha.shader" />
      <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />

@@ -17,10 +17,38 @@ public class PuertaAbrir : MonoBehaviour, IInspectObjects {
 	[SerializeField]
 	private AudioSource audioPuerta;
 
+	[SerializeField]
+	private LibraryOfObjects myLibrary;
+
+	[SerializeField]
+	private int objectToCheckInLibrary;
+
+	[SerializeField]
+	private bool isNeedingKey;
+
 	void Start () {
 		DOTween.Init(false, true, LogBehaviour.ErrorsOnly);
 	}
 	public void Action (GameObject player, GameObject aimObject)
+	{
+		if(isNeedingKey)
+		{
+			if(myLibrary.ObjectWasColected(objectToCheckInLibrary))
+			{
+				OpenDoor();
+			}else
+			{
+				myLibrary.ShowTextKey();
+			}
+			
+		}else
+		{
+			OpenDoor();
+		}
+		
+	}
+
+	private void OpenDoor()
 	{
 		theDoor.DORotate(openDoorRotation,timeToOpen);
 		audioPuerta.Play();

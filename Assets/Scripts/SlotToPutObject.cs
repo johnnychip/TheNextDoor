@@ -10,9 +10,19 @@ public class SlotToPutObject : MonoBehaviour, IInspectObjects {
 	[SerializeField]
 	private int objectInLibrary;
 
+	[SerializeField]
+	private GameObject[] thigsToActivate;
+
 	public void Action(GameObject player, GameObject aimObject)
 	{
-		myLibrary.TryToPutObject(objectInLibrary, transform);
+		if(myLibrary.TryToPutObject(objectInLibrary, transform))
+		{
+			if(thigsToActivate.Length<=0)
+				return;
+
+			foreach(GameObject temp in thigsToActivate)
+				temp.GetComponent<IInspectObjects>().Action(player,gameObject);
+		}
 	}
 
 	public	void GoingOut(GameObject player, GameObject aimObject)

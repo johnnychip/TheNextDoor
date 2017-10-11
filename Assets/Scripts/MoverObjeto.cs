@@ -11,10 +11,14 @@ public class MoverObjeto : MonoBehaviour, IInspectObjects {
 	[SerializeField]
 	private Transform limitB;
 
+	[SerializeField]
+	private GameObject[] objectsToAction;
 
 	private float modificator;
 
 	private bool isPlayerActive;
+
+	private bool isActionated;
 
 	private GameObject currentPlayer;
 
@@ -55,30 +59,43 @@ public class MoverObjeto : MonoBehaviour, IInspectObjects {
 			}
 			modificator = Mathf.Clamp(modificator,0,1);
 			LerpingDoor();
+			
+			if(modificator>=1)
+			{
+				foreach(GameObject temp in objectsToAction)
+				{
+					temp.GetComponent<IInspectObjects>().Action(gameObject,gameObject);
+				}
+				GoingOut(currentPlayer,currentPlayer);
+				isActionated = true;
+			}
 		}
 	}
 
 	public void Action(GameObject player, GameObject aimObject)
 	{
-		if(Input.GetKeyDown(KeyCode.E))
+		if(Input.GetKeyDown(KeyCode.E)&&!isActionated)
 			{	
 				if(isPlayerActive)
 				{
 				player.GetComponent<RigidbodyFirstPersonController>().enabled = false;
 				isPlayerActive = false;
 				player.transform.SetParent(transform);
+				currentPlayer = player;
 				}
 				else
 				{
 				player.GetComponent<RigidbodyFirstPersonController>().enabled = true;
 				isPlayerActive = true;
 				player.transform.SetParent(null);
+				currentPlayer = null;
 				}
 			}
 	}
 
 	public void GoingOut(GameObject player, GameObject aimObject)
 	{
+		player.GetComponent<RigidbodyFirstPersonController>().enabled = true;
 		isPlayerActive = true;
 		player.transform.SetParent(null);
 	}
