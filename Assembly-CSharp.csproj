@@ -328,10 +328,14 @@
      <Compile Include="Assets\Scripts\ObjetoColecatable.cs" />
      <Compile Include="Assets\Scripts\PasoDeEscena.cs" />
      <Compile Include="Assets\Scripts\PuertaAbrir.cs" />
+     <Compile Include="Assets\Scripts\ShowMessage.cs" />
      <Compile Include="Assets\Scripts\ShowNotesScript.cs" />
      <Compile Include="Assets\Scripts\SlotToPutObject.cs" />
      <Compile Include="Assets\Scripts\SwichActivateObjects.cs" />
      <Compile Include="Assets\Scripts\TouchKeyToDeactivate.cs" />
+     <Compile Include="Assets\Scripts\TriggerActivateAction.cs" />
+     <Compile Include="Assets\Scripts\TriggerLuzIntermitente.cs" />
+     <Compile Include="Assets\Scripts\UIManager.cs" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
