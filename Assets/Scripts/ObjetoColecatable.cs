@@ -11,6 +11,10 @@ public class ObjetoColecatable : MonoBehaviour, IInspectObjects {
 
 	public void Action(GameObject player, GameObject aimObject)
 	{
+		if(isColected)
+			return;
+
+		AudioManager.Instance.PlayTakeSound();
 		isColected = true;
 		aimObject.GetComponent<InspectAim>().ActivateAim();
 		gameObject.SetActive(false);

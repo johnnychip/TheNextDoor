@@ -317,6 +317,7 @@
      <Compile Include="Assets\Scripts\AbrirPuerta.cs" />
      <Compile Include="Assets\Scripts\AbrirPuertaGolpear.cs" />
      <Compile Include="Assets\Scripts\ActivatesObjectsWhen.cs" />
+     <Compile Include="Assets\Scripts\AudioManager.cs" />
      <Compile Include="Assets\Scripts\AudioShootCollision.cs" />
      <Compile Include="Assets\Scripts\Girador.cs" />
      <Compile Include="Assets\Scripts\IInspectObjects.cs" />

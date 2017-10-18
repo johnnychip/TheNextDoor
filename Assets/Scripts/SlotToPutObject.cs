@@ -17,6 +17,9 @@ public class SlotToPutObject : MonoBehaviour, IInspectObjects {
 	{
 		if(myLibrary.TryToPutObject(objectInLibrary, transform))
 		{
+
+			AudioManager.Instance.PlayTakeSound();
+
 			if(thigsToActivate.Length<=0)
 				return;
 
