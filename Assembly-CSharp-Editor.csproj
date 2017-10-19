@@ -109,6 +109,7 @@
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_VividLight.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Hexagon_Black.shader" />
+     <None Include="Assets\Materials\Shader\Scripts\ShaderLightBordes.shader" />
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blur_Focus.shader" />
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Gradients_Stripe.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />

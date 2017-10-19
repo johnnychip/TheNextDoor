@@ -314,12 +314,10 @@
      <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
      <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
-     <Compile Include="Assets\Scripts\AbrirPuerta.cs" />
      <Compile Include="Assets\Scripts\AbrirPuertaGolpear.cs" />
      <Compile Include="Assets\Scripts\ActivatesObjectsWhen.cs" />
      <Compile Include="Assets\Scripts\AudioManager.cs" />
      <Compile Include="Assets\Scripts\AudioShootCollision.cs" />
-     <Compile Include="Assets\Scripts\Girador.cs" />
      <Compile Include="Assets\Scripts\IInspectObjects.cs" />
      <Compile Include="Assets\Scripts\Inspeccionador.cs" />
      <Compile Include="Assets\Scripts\InspectAim.cs" />
@@ -336,6 +334,7 @@
      <Compile Include="Assets\Scripts\TouchKeyToDeactivate.cs" />
      <Compile Include="Assets\Scripts\TriggerActivateAction.cs" />
      <Compile Include="Assets\Scripts\TriggerLuzIntermitente.cs" />
+     <Compile Include="Assets\Scripts\TriggerToSimpleMove.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
@@ -361,6 +360,7 @@
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blend2Camera_VividLight.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_FX_Hexagon_Black.shader" />
+     <None Include="Assets\Materials\Shader\Scripts\ShaderLightBordes.shader" />
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Blur_Focus.shader" />
      <None Include="Assets\Camera Filter Pack\Resources\CameraFilterPack_Gradients_Stripe.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />

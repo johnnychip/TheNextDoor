@@ -13,12 +13,21 @@ public class SlotToPutObject : MonoBehaviour, IInspectObjects {
 	[SerializeField]
 	private GameObject[] thigsToActivate;
 
+	[SerializeField]
+	private GameObject[] thisSetActive;
+
 	public void Action(GameObject player, GameObject aimObject)
 	{
 		if(myLibrary.TryToPutObject(objectInLibrary, transform))
 		{
 
 			AudioManager.Instance.PlayTakeSound();
+
+			if(thisSetActive.Length>0)
+			{
+				foreach(GameObject temp in thisSetActive)
+					temp.SetActive(true);
+			}
 
 			if(thigsToActivate.Length<=0)
 				return;
