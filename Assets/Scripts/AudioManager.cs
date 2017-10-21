@@ -27,8 +27,13 @@ public class AudioManager : MonoBehaviour {
 
 	public void PlayTakeSound()
 	{
-		Debug.Log("It is playing");
 		myAudioSoure.clip = myAudios[0];
+		myAudioSoure.Play();
+	}
+
+	public void PlayDoorSound()
+	{
+		myAudioSoure.clip = myAudios[1];
 		myAudioSoure.Play();
 	}
 

@@ -14,6 +14,9 @@ public class TriggerToSimpleMove : MonoBehaviour {
 	[SerializeField]
 	private Transform objectToMove;
 
+	[SerializeField]
+	private string tagOfTrigger;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -22,7 +25,7 @@ public class TriggerToSimpleMove : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other)
 	{
-		if(other.gameObject.CompareTag("Player"))
+		if(other.gameObject.CompareTag(tagOfTrigger))
 		{
 			MoveObject();
 		}

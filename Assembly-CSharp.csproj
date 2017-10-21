@@ -334,6 +334,7 @@
      <Compile Include="Assets\Scripts\TouchKeyToDeactivate.cs" />
      <Compile Include="Assets\Scripts\TriggerActivateAction.cs" />
      <Compile Include="Assets\Scripts\TriggerLuzIntermitente.cs" />
+     <Compile Include="Assets\Scripts\TriggerRotateCallback.cs" />
      <Compile Include="Assets\Scripts\TriggerToSimpleMove.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
