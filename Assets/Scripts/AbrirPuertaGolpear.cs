@@ -32,6 +32,7 @@ public class AbrirPuertaGolpear : MonoBehaviour, IInspectObjects {
 	{
 		if(nocksCounter<nocksToOpen)
 		{
+			AudioManager.Instance.PlaySoundPuertaGolpes();
 			nocksCounter++;
 		}
 		else

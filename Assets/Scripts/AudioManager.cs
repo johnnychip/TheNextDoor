@@ -33,7 +33,19 @@ public class AudioManager : MonoBehaviour {
 
 	public void PlayDoorSound()
 	{
+		//myAudioSoure.clip = myAudios[1];
+		myAudioSoure.Play();
+	}
+
+	public void PlaySoundPuertaGolpes()
+	{
 		myAudioSoure.clip = myAudios[1];
+		myAudioSoure.Play();
+	}
+
+	public void PlaySoundIndex(int indice)
+	{
+		myAudioSoure.clip = myAudios[indice];
 		myAudioSoure.Play();
 	}
 
