@@ -9,7 +9,7 @@ public class ObjetoColecatable : MonoBehaviour, IInspectObjects {
 
 	public bool isColected;
 
-	public void Action(GameObject player, GameObject aimObject)
+    public void Action(GameObject player, GameObject aimObject)
 	{
 		if(isColected)
 			return;
@@ -22,6 +22,6 @@ public class ObjetoColecatable : MonoBehaviour, IInspectObjects {
 
 	public void GoingOut(GameObject player, GameObject aimObject)
 	{
-
+        //GoingOut
 	}
 }
