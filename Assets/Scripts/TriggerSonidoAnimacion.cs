@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class TriggerSonidoAnimacion : MonoBehaviour {
 
@@ -11,15 +12,26 @@ public class TriggerSonidoAnimacion : MonoBehaviour {
 	private Animator animator;
 
 	[SerializeField]
+	private Transform objectToTrigger;
+
+	[SerializeField]
 	private bool isLoop;
 
 	[SerializeField]
 	private bool isTriggered;
 
+	[SerializeField]
+	private Vector3 rotionTo;
+
+
+	void Start ()
+	{
+		DOTween.Init(false, true, LogBehaviour.ErrorsOnly);
+	}
 
 	public void PlayAnimation()
 	{
-		animator.SetTrigger("move");
+		objectToTrigger.DORotate(rotionTo,0.2f).SetLoops(6);
 		myAudioSource.Play();
 	}
 

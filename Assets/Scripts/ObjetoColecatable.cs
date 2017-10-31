@@ -7,7 +7,12 @@ public class ObjetoColecatable : MonoBehaviour, IInspectObjects {
 	[SerializeField]
 	private int objectId;
 
+	[SerializeField]
+	private GameObject[] objectsToActivate;
+
 	public bool isColected;
+
+
 
     public void Action(GameObject player, GameObject aimObject)
 	{
@@ -18,6 +23,14 @@ public class ObjetoColecatable : MonoBehaviour, IInspectObjects {
 		isColected = true;
 		aimObject.GetComponent<InspectAim>().ActivateAim();
 		gameObject.SetActive(false);
+
+		if(objectsToActivate!=null)
+		{
+			foreach(GameObject temp in objectsToActivate)
+			{
+				temp.GetComponent<IInspectObjects>().Action(gameObject,gameObject);
+			}
+		}
 	}
 
 	public void GoingOut(GameObject player, GameObject aimObject)

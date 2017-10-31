@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ObjectToCollectDependenceTriggerAction : MonoBehaviour {
+public class ObjectToCollectDependenceTriggerAction : MonoBehaviour, IInspectObjects {
 
 	[SerializeField]
 	private GameObject[] objectsToCollect;
@@ -11,13 +11,13 @@ public class ObjectToCollectDependenceTriggerAction : MonoBehaviour {
 	[SerializeField]
 	private int sceneToLoad;
 
-	// Use this for initialization
-	void Start () {
-		
+	public void Action(GameObject player, GameObject aimObject)
+	{
+		CheckObjectsAreDeactive();
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+	public void GoingOut(GameObject player, GameObject aimObject)
+	{
 		
 	}
 
@@ -25,7 +25,7 @@ public class ObjectToCollectDependenceTriggerAction : MonoBehaviour {
 	{
 		foreach(GameObject temp in objectsToCollect)
 		{
-			if(!temp.activeSelf)
+			if(temp.activeSelf)
 			{	
 				return;
 			}
