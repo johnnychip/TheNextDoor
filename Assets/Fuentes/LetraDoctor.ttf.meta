@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 2758f5902a41e7e49aa7c6717dcf9e66
+timeCreated: 1509998976
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Vadim's Writing
+  fontNames:
+  - Vadim's Writing
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

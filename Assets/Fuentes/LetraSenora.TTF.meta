@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 11260f83f8b2bc446b58695dac14134b
+timeCreated: 1509998858
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Emperors Scrawl
+  fontNames:
+  - Emperors Scrawl
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
