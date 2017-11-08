@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjetoColecatable : MonoBehaviour, IInspectObjects {
+public class ObjetoColecatable : Inspeccionador {
 
 	[SerializeField]
 	private int objectId;
@@ -10,20 +10,38 @@ public class ObjetoColecatable : MonoBehaviour, IInspectObjects {
 	[SerializeField]
 	private GameObject[] objectsToActivate;
 
+
 	public bool isColected;
 
+	public bool isBeingInspected;
 
+	
 
-    public void Action(GameObject player, GameObject aimObject)
+    public override void Action(GameObject player, GameObject aimObject)
 	{
+		
+
 		if(isColected)
 			return;
 
+		base.Action(player, aimObject);
+		
+		isBeingInspected = true;
+
+	
+		
+	}
+
+	public override void SomethignToDoInOutBlur()
+	{
+		CollectTheObject();
+	}
+
+	private void CollectTheObject()
+	{
 		AudioManager.Instance.PlayTakeSound();
 		isColected = true;
-		aimObject.GetComponent<InspectAim>().ActivateAim();
 		gameObject.SetActive(false);
-
 		if(objectsToActivate!=null)
 		{
 			foreach(GameObject temp in objectsToActivate)
@@ -33,8 +51,4 @@ public class ObjetoColecatable : MonoBehaviour, IInspectObjects {
 		}
 	}
 
-	public void GoingOut(GameObject player, GameObject aimObject)
-	{
-        //GoingOut
-	}
 }

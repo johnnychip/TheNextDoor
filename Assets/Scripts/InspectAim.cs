@@ -16,6 +16,8 @@ public class InspectAim : MonoBehaviour {
 	[SerializeField]
 	private GameObject handAim;
 
+	public Transform posToInspect;
+
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.E) && currentInspect != null)
 		{

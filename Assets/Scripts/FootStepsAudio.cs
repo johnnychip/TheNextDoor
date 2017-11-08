@@ -10,6 +10,9 @@ public class FootStepsAudio : MonoBehaviour {
 	[SerializeField]
 	private Rigidbody rb;
 
+	[SerializeField]
+	private Animator anim;
+
 
 
 	// Use this for initialization

@@ -3,17 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 using UnityStandardAssets.ImageEffects;
+using DG.Tweening;
 
 public class Inspeccionador : MonoBehaviour, IInspectObjects {
 
 	[SerializeField]
 	private float rotSpeed = 500f;
 
+	[SerializeField]
+	private string textOfTheCollectable;
+
+	private Transform posToInspect;
+
 	private bool isPlayerActive;
 
 	private GameObject currentObject;
 
 	private Quaternion oldRotation;
+	private Vector3 oldPosition;
 
 	private RigidbodyFirstPersonController myCharacterController;
 
@@ -21,6 +28,7 @@ public class Inspeccionador : MonoBehaviour, IInspectObjects {
 
     private void Awake()
     {
+		DOTween.Init(false, true, LogBehaviour.ErrorsOnly);
         if (blur != null)
             return;
 
@@ -30,6 +38,10 @@ public class Inspeccionador : MonoBehaviour, IInspectObjects {
     void Start ()
     {
 		isPlayerActive = true;
+
+        oldRotation = transform.rotation;
+					
+		oldPosition = transform.position;
 	}
 
 	void Update ()
@@ -40,22 +52,35 @@ public class Inspeccionador : MonoBehaviour, IInspectObjects {
 		}
 	}
 
-	public void Action(GameObject player, GameObject aimObject)
+	public virtual void Action(GameObject player, GameObject aimObject)
 	{
         Debug.Log("Action");
 
 		if (player.GetComponent<RigidbodyFirstPersonController>().isActiveAndEnabled)
         {
+			player.GetComponent<Rigidbody>().velocity = Vector3.zero;
 			player.GetComponent<RigidbodyFirstPersonController>().enabled = false;
+			posToInspect = player.GetComponentInChildren<InspectAim>().posToInspect;
 			isPlayerActive = false;
-			oldRotation = transform.rotation;
+			blur.enabled = true;
+			UIManager.Instance.SetMessageScreen(textOfTheCollectable);
+			transform.DOMove(posToInspect.position,0.5f, false);
+			
 		}
         else
 		{
 			player.GetComponent<RigidbodyFirstPersonController>().enabled = true;
 			isPlayerActive = true;
+			blur.enabled = false;
 			transform.rotation = oldRotation;
+			transform.DOMove(oldPosition,0.5f, false);
+			SomethignToDoInOutBlur();
 		}
+	}
+
+	public virtual void SomethignToDoInOutBlur()
+	{
+
 	}
 
 
@@ -79,9 +104,9 @@ public class Inspeccionador : MonoBehaviour, IInspectObjects {
 		gameObject.transform.Rotate(Vector3.up, -rotX);
 		gameObject.transform.Rotate(Vector3.right, rotY);
 
-        if (rotX != 0 && rotY != 0)
+        /*if (rotX != 0 && rotY != 0)
             blur.enabled = true;
         else
-            blur.enabled = false;
+            blur.enabled = false;*/
     }
 }
