@@ -26,11 +26,16 @@ public class PuertaAbrir : MonoBehaviour, IInspectObjects {
 	[SerializeField]
 	private bool isNeedingKey;
 
+	private bool isOpen;
+
 	void Start () {
 		DOTween.Init(false, true, LogBehaviour.ErrorsOnly);
 	}
 	public void Action (GameObject player, GameObject aimObject)
-	{
+	{	
+		if(isOpen)
+			return;
+
 		if(isNeedingKey)
 		{
 			if(myLibrary.ObjectWasColected(objectToCheckInLibrary))
@@ -50,6 +55,7 @@ public class PuertaAbrir : MonoBehaviour, IInspectObjects {
 
 	private void OpenDoor()
 	{
+		isOpen= true;
 		theDoor.DORotate(openDoorRotation,timeToOpen);
 		audioPuerta.Play();
 	}

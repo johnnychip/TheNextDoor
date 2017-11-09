@@ -16,10 +16,16 @@ public class SlotToPutObject : MonoBehaviour, IInspectObjects {
 	[SerializeField]
 	private GameObject[] thisSetActive;
 
+	private bool isPut;
+
 	public void Action(GameObject player, GameObject aimObject)
 	{
+		if(isPut)
+			return;
+
 		if(myLibrary.TryToPutObject(objectInLibrary, transform))
 		{
+			isPut = true;
 
 			AudioManager.Instance.PlayTakeSound();
 

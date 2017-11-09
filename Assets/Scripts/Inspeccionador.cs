@@ -13,6 +13,9 @@ public class Inspeccionador : MonoBehaviour, IInspectObjects {
 	[SerializeField]
 	private string textOfTheCollectable;
 
+	[SerializeField]
+	private bool killIt;
+
 	private Transform posToInspect;
 
 	private bool isPlayerActive;
@@ -39,9 +42,7 @@ public class Inspeccionador : MonoBehaviour, IInspectObjects {
     {
 		isPlayerActive = true;
 
-        oldRotation = transform.rotation;
-					
-		oldPosition = transform.position;
+        
 	}
 
 	void Update ()
@@ -54,6 +55,11 @@ public class Inspeccionador : MonoBehaviour, IInspectObjects {
 
 	public virtual void Action(GameObject player, GameObject aimObject)
 	{
+
+		oldRotation = transform.rotation;
+					
+		oldPosition = transform.position;
+
         Debug.Log("Action");
 
 		if (player.GetComponent<RigidbodyFirstPersonController>().isActiveAndEnabled)
@@ -72,8 +78,16 @@ public class Inspeccionador : MonoBehaviour, IInspectObjects {
 			player.GetComponent<RigidbodyFirstPersonController>().enabled = true;
 			isPlayerActive = true;
 			blur.enabled = false;
-			transform.rotation = oldRotation;
-			transform.DOMove(oldPosition,0.5f, false);
+			if(killIt)
+			{
+				transform.rotation = oldRotation;
+				transform.position = oldPosition;
+			}else
+			{
+				transform.rotation = oldRotation;
+				transform.DOMove(oldPosition,0.5f, false);
+			}
+			
 			SomethignToDoInOutBlur();
 		}
 	}

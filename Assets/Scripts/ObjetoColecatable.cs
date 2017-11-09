@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class ObjetoColecatable : Inspeccionador {
 
@@ -10,6 +11,7 @@ public class ObjetoColecatable : Inspeccionador {
 	[SerializeField]
 	private GameObject[] objectsToActivate;
 
+	private GameObject playerObject;
 
 	public bool isColected;
 
@@ -23,6 +25,8 @@ public class ObjetoColecatable : Inspeccionador {
 
 		if(isColected)
 			return;
+
+		playerObject = player;
 
 		base.Action(player, aimObject);
 		
@@ -38,10 +42,12 @@ public class ObjetoColecatable : Inspeccionador {
 	}
 
 	private void CollectTheObject()
-	{
+	{	
 		AudioManager.Instance.PlayTakeSound();
 		isColected = true;
+		playerObject.GetComponentInChildren<InspectAim>().ActivateAim();
 		gameObject.SetActive(false);
+		
 		if(objectsToActivate!=null)
 		{
 			foreach(GameObject temp in objectsToActivate)
@@ -49,6 +55,7 @@ public class ObjetoColecatable : Inspeccionador {
 				temp.GetComponent<IInspectObjects>().Action(gameObject,gameObject);
 			}
 		}
+		
 	}
 
 }

@@ -23,6 +23,8 @@ public class AbrirPuertaGolpear : MonoBehaviour, IInspectObjects {
 	[SerializeField]
 	private AudioSource audioPuerta;
 
+	private bool isOpen;
+
 	private int nocksCounter;
 
 	void Start () {
@@ -30,6 +32,9 @@ public class AbrirPuertaGolpear : MonoBehaviour, IInspectObjects {
 	}
 	public void Action (GameObject player, GameObject aimObject)
 	{
+		if(isOpen)
+			return;
+		
 		if(nocksCounter<nocksToOpen)
 		{
 			AudioManager.Instance.PlaySoundPuertaGolpes();
@@ -37,6 +42,7 @@ public class AbrirPuertaGolpear : MonoBehaviour, IInspectObjects {
 		}
 		else
 		{
+			isOpen = true;
 			theDoor.DORotate(openDoorRotation,timeToOpen);
 			if(thigsToActivate!=null){
 				foreach(GameObject temp in thigsToActivate)
