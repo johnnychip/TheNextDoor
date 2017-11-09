@@ -31,6 +31,12 @@ public class AudioManager : MonoBehaviour {
 		myAudioSoure.Play();
 	}
 
+	public void PlayPutSound()
+	{
+		myAudioSoure.clip = myAudios[2];
+		myAudioSoure.Play();
+	}
+
 	public void PlayDoorSound()
 	{
 		//myAudioSoure.clip = myAudios[1];

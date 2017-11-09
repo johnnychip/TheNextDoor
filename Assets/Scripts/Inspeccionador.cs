@@ -42,7 +42,10 @@ public class Inspeccionador : MonoBehaviour, IInspectObjects {
     {
 		isPlayerActive = true;
 
-        
+		oldRotation = transform.rotation;
+					
+		oldPosition = transform.position;
+
 	}
 
 	void Update ()
@@ -56,9 +59,7 @@ public class Inspeccionador : MonoBehaviour, IInspectObjects {
 	public virtual void Action(GameObject player, GameObject aimObject)
 	{
 
-		oldRotation = transform.rotation;
-					
-		oldPosition = transform.position;
+		
 
         Debug.Log("Action");
 

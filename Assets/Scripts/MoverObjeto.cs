@@ -74,10 +74,14 @@ public class MoverObjeto : MonoBehaviour, IInspectObjects {
 
 	public void Action(GameObject player, GameObject aimObject)
 	{
+
+		
+
 		if(Input.GetKeyDown(KeyCode.E)&&!isActionated)
 			{	
 				if(isPlayerActive)
 				{
+				UIManager.Instance.SetMessageScreen("Press W to move");
 				player.GetComponent<RigidbodyFirstPersonController>().enabled = false;
 				isPlayerActive = false;
 				player.transform.SetParent(transform);

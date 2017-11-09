@@ -27,7 +27,7 @@ public class SlotToPutObject : MonoBehaviour, IInspectObjects {
 		{
 			isPut = true;
 
-			AudioManager.Instance.PlayTakeSound();
+			AudioManager.Instance.PlayPutSound();
 
 			if(thisSetActive.Length>0)
 			{

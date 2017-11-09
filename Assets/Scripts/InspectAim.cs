@@ -29,6 +29,9 @@ public class InspectAim : MonoBehaviour {
 	{
 		if(other.gameObject.tag == "inspect")
 		{
+			if(!player.GetComponent<RigidbodyFirstPersonController>().enabled)
+				return;
+
 			currentInspect = other.gameObject;
 			aim.SetActive(false);
 			handAim.SetActive(true);
@@ -52,5 +55,7 @@ public class InspectAim : MonoBehaviour {
 			handAim.SetActive(false);
 		}
 	}
+
+	
 
 }
