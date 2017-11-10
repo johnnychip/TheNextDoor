@@ -5,9 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class UIMainMenu : MonoBehaviour
 {
-    public void LoadNext()
+    public void Update()
     {
-        SceneManager.LoadScene("Habitacion_0");
+        if (Input.GetMouseButtonDown(0))
+        {
+            SceneManager.LoadScene("Habitacion_0");
+        }
+        if(Input.GetMouseButtonDown(1))
+        {
+            SceneManager.LoadScene("Habitacion_0");
+        }
     }
 	
 }
