@@ -107,6 +107,10 @@ public class MoverObjeto : MonoBehaviour, IInspectObjects {
 	void LerpingDoor()
 	{
 		transform.position = Vector3.Lerp(limitA.position, limitB.position, modificator);
+		if(modificator>=1)
+		{
+			AudioManager.Instance.PlaySoundIndex(2);
+		}
 	}
 	
 }
