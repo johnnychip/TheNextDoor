@@ -18,6 +18,8 @@ public class CanvasScreamer : MonoBehaviour {
 	[SerializeField]
 	private Sprite[] mySprites;
 
+	private bool isActionated;
+
 	// Use this for initialization
 	void Start () {
 		DOTween.Init(false, true, LogBehaviour.ErrorsOnly);
@@ -30,11 +32,15 @@ public class CanvasScreamer : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
+		if(isActionated)
+			return;
+
 		SetScreamer();
 	}
 
 	private void SetScreamer()
 	{
+		isActionated = true;
 		myImage.sprite = mySprites[Random.Range(0,mySprites.Length)];
 		myImage.color = initialColor;
 		AudioManager.Instance.PlaySoundIndex(3);
