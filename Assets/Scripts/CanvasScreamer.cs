@@ -18,6 +18,9 @@ public class CanvasScreamer : MonoBehaviour {
 	[SerializeField]
 	private Sprite[] mySprites;
 
+	[SerializeField]
+	private int soundToPlay;
+
 	private bool isActionated;
 
 	// Use this for initialization
@@ -43,7 +46,11 @@ public class CanvasScreamer : MonoBehaviour {
 		isActionated = true;
 		myImage.sprite = mySprites[Random.Range(0,mySprites.Length)];
 		myImage.color = initialColor;
-		AudioManager.Instance.PlaySoundIndex(3);
+		if(soundToPlay!=0)
+			AudioManager.Instance.PlaySoundIndex(soundToPlay);
+		else
+			AudioManager.Instance.PlaySoundIndex(3);
+
 		myImage.DOColor(EndColor,timeOfFade);
 	}
 }

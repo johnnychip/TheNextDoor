@@ -23,6 +23,9 @@ public class TriggerRotateCallback : MonoBehaviour {
 	[SerializeField]
 	private GameObject[] objectToActionate;
 
+	[SerializeField]
+	private TriggerSonidoAnimacion myTriggerSonido;
+
 	private bool isActivated;
 
 
@@ -34,7 +37,7 @@ public class TriggerRotateCallback : MonoBehaviour {
 	{
 		if(other.gameObject.CompareTag(objectTagActivator)&&!isActivated)
 		{	
-			AudioManager.Instance.PlayDoorSound();
+			AudioManager.Instance.PlayDoorClose();
 			isActivated = true;
 			RotateObject();
 		}
@@ -47,6 +50,7 @@ public class TriggerRotateCallback : MonoBehaviour {
 
 	private void ShootAudio()
 	{
+		myTriggerSonido.PlayAnimation();
 		myAudioSoruce.Play();
 		StartCoroutine(CallBackAudio(myAudioSoruce.clip.length)) ;
 		

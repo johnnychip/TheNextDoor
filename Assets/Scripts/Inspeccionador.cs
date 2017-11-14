@@ -99,7 +99,7 @@ public class Inspeccionador : MonoBehaviour, IInspectObjects {
 	}
 
 
-	public void GoingOut(GameObject player, GameObject aimObject)
+	public virtual void GoingOut(GameObject player, GameObject aimObject)
 	{
         Debug.Log("GoingOut");
 

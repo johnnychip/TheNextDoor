@@ -81,7 +81,7 @@ public class MoverObjeto : MonoBehaviour, IInspectObjects {
 			{	
 				if(isPlayerActive)
 				{
-				UIManager.Instance.SetMessageScreen("Press W to move");
+				UIManager.Instance.SetMessageScreen("Oprime W para mover");
 				player.GetComponent<RigidbodyFirstPersonController>().enabled = false;
 				isPlayerActive = false;
 				player.transform.SetParent(transform);

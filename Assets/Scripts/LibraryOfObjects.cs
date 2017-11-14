@@ -21,7 +21,7 @@ public class LibraryOfObjects : MonoBehaviour {
 			return true;
 		}else
 		{
-			textoLoco.text = "I think, I can put something here...";
+			textoLoco.text = "Creo que puedo poner algo aqui, tengo que seguir buscando...";
 			Invoke("RestartText",1.5f);
 			return false;
 		}
@@ -40,7 +40,7 @@ public class LibraryOfObjects : MonoBehaviour {
 
 	public void ShowTextKey()
 	{
-		textoLoco.text = "I have to find the key...";
+		textoLoco.text = "Tengo que encontrar la llave o el objeto que abre esta puerta...";
 		Invoke("RestartText",1.5f);
 	}
 

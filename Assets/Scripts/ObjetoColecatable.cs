@@ -58,4 +58,12 @@ public class ObjetoColecatable : Inspeccionador {
 		
 	}
 
+	public override void GoingOut(GameObject player, GameObject aimObject)
+	{
+
+		if(!isColected)
+			base.GoingOut(player,aimObject);
+        
+    }
+
 }

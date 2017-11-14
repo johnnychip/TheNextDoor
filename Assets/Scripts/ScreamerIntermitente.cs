@@ -19,7 +19,10 @@ public class ScreamerIntermitente : MonoBehaviour, IInspectObjects {
 
 	public void Action(GameObject player, GameObject aimObject)
 	{
-		myAudioSource.Play();
+		if(myAudioSource!=null)
+		{
+			myAudioSource.Play();
+		}
 		StartCoroutine(TimeToMove());
 	}
 

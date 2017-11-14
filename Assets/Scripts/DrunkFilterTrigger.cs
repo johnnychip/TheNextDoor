@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class DrunkFilterTrigger : MonoBehaviour, IInspectObjects {
 
@@ -23,7 +24,9 @@ public class DrunkFilterTrigger : MonoBehaviour, IInspectObjects {
 	public void Action(GameObject player, GameObject aimObject)
 	{
 		playerObject = player;
+		playerObject.GetComponent<RigidbodyFirstPersonController>().enabled = false;
 		playerObject.GetComponentInChildren<CameraFilterPack_FX_Drunk>().enabled = true;
+		playerObject.GetComponentInChildren<Animator>().SetTrigger("scream");
 		StartCoroutine(Hangover());
 	}
 
@@ -36,6 +39,7 @@ public class DrunkFilterTrigger : MonoBehaviour, IInspectObjects {
 	private IEnumerator Hangover()
 	{
 		yield return new WaitForSeconds(timeOfHangover);
+		playerObject.GetComponent<RigidbodyFirstPersonController>().enabled = true;
 		playerObject.GetComponentInChildren<CameraFilterPack_FX_Drunk>().enabled = false;
 	}
 

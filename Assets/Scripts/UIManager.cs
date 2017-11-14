@@ -9,6 +9,9 @@ public class UIManager : MonoBehaviour {
 	[SerializeField]
 	private Text mesajeText;
 
+	[SerializeField]
+	private Image blackScreen;
+
 	public static UIManager Instance
 	{
 		get;
@@ -28,6 +31,11 @@ public class UIManager : MonoBehaviour {
 	{
 		mesajeText.text = texto;
 		StartCoroutine("RestartText");
+	}
+
+	public void SetBlackScreen()
+	{
+		blackScreen.gameObject.SetActive(true);
 	}
 
 	IEnumerator RestartText ()
